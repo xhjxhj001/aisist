@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="vote">
+    <view class="userinfo-left">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLFbNiaADSSo6SJwibTHxGlVGicibZQxrWZficfbEORSpQ28wx4g0BfIlljCzQjb1JTsXbESxuKRFjBaMw/132" mode="cover"></image>
+        <text class="userinfo-nickname">欢聚</text>
+    </view>
+
+    <view class="userinfo-right">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="https://wx.qlogo.cn/mmopen/vi_32/y2gXm61b7yy70d6VqFmzSDtF7iaBQXiaUia7J4OZD6IjEZVjmxfZTvpS9LRceVictRtg7K6g7icX45gcl0cVxYibt5Ng/132" mode="cover"></image>
+        <text class="userinfo-nickname">海澍</text>
+    </view>
+    <view class='percent'>
+        <progress stroke-width='8' style='margin-top:20px' percent="{{percent}}" active='true' backgroundColor='red' activeColor='green'  />
+    </view>
+    <view class="vs">vs</view>
+</view>

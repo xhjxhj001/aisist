@@ -1,0 +1,44 @@
+/**index.wxss**/
+/**投票模块**/
+.vote{
+    margin-top:200rpx;
+    margin-left:50rpx;
+    margin-right:50rpx;
+}
+/**用户信息**/
+.userinfo-left {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vs{
+  font-size: 2rem;
+  margin-left: 120rpx;
+  float: left;
+}
+.userinfo-right {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/**百分比条**/
+.percent {
+  padding-top: 20rpx;
+}
+/** 用户头像**/
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+/** 用户姓名**/
+.userinfo-nickname {
+  color: #aaa;
+}
+/** 用户说明**/
+.usermotto {
+  margin-top: 200px;
+}

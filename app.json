@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/my/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "AiSist",
+    "backgroundColor": "#000",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "聊天",
+        "iconPath": "img/chat_white.png",
+        "selectedIconPath": "img/chat_green.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "商店",
+        "iconPath": "img/store_white.png",
+        "selectedIconPath": "img/store_green.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "img/my_white.png",
+        "selectedIconPath": "img/my_green.png"
+      }
+    ],
+    "color": "#fff",
+    "backgroundColor": "#000",
+    "borderStyle": "white"
+  },
+  "debug": "true"
+}
