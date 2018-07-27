@@ -3,8 +3,20 @@
 const app = getApp()
 
 Page({
+  onTabItemTap(item) {
+      console.log(item.index);
+      console.log(item.pagePath);
+      console.log(item.text);
+      wx.hideTabBarRedDot({
+          index: item.index
+      })
+  },
   data: {
-    percent:50,
+    votes: {
+      "vote1": 0,
+      "vote2": 0,
+      "percent": 50
+    },
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -16,7 +28,43 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  //事件处理函数
+  bindCallHj: function() {
+      var that = this;
+      wx.request({
+        url: 'https://www.wanghaishu.com/vote/1',
+        success: function(e){
+          that.setData({
+            votes: e.data.data
+          })
+        }
+      })
+  },
+  bindCallHs: function() {
+    var that = this;
+    wx.request({
+      url: 'https://www.wanghaishu.com/vote/2',
+      success: function (e) {
+        that.setData({
+          votes: e.data.data
+        })
+      }
+    })
+  },
+    onLoad: function () {
+    var that = this;
+    wx.request({
+      url: 'https://www.wanghaishu.com/vote',
+      success: function(e){
+        console.log(e.data.data);
+        that.setData({
+            votes:e.data.data
+        })
+      }
+    })
+    wx.showTabBarRedDot({
+        index: 2
+    });
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -44,7 +92,7 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
+    getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({

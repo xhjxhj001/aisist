@@ -6,35 +6,35 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#000",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "AiSist",
-    "backgroundColor": "#000",
-    "navigationBarTextStyle":"white"
+    "backgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "聊天",
-        "iconPath": "img/chat_white.png",
+        "iconPath": "img/chat_black.png",
         "selectedIconPath": "img/chat_green.png"
       },
       {
         "pagePath": "pages/index/index",
         "text": "商店",
-        "iconPath": "img/store_white.png",
+        "iconPath": "img/store_black.png",
         "selectedIconPath": "img/store_green.png"
       },
       {
         "pagePath": "pages/my/index",
         "text": "我的",
-        "iconPath": "img/my_white.png",
+        "iconPath": "img/my_black.png",
         "selectedIconPath": "img/my_green.png"
       }
     ],
-    "color": "#fff",
-    "backgroundColor": "#000",
-    "borderStyle": "white"
+    "color": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black"
   },
   "debug": "true"
 }

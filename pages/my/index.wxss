@@ -1,9 +1,9 @@
 /**index.wxss**/
 /**投票模块**/
 .vote{
-    margin-top:200rpx;
-    margin-left:50rpx;
-    margin-right:50rpx;
+    margin-top:100rpx;
+    margin-left:20rpx;
+    margin-right:20rpx;
 }
 /**用户信息**/
 .userinfo-left {
@@ -12,10 +12,15 @@
   flex-direction: column;
   align-items: center;
 }
-.vs{
+.call {
+  margin: 20rpx;
+}
+
+/** VS **/
+.vs {
+  color: black;
   font-size: 2rem;
-  margin-left: 120rpx;
-  float: left;
+  text-align: center;
 }
 .userinfo-right {
   float: right;
@@ -25,7 +30,7 @@
 }
 /**百分比条**/
 .percent {
-  padding-top: 20rpx;
+  padding-top: 10rpx;
 }
 /** 用户头像**/
 .userinfo-avatar {
